@@ -106,6 +106,9 @@ The model is fine-tuned using a small grid:\
 ## Requirements
 pip install tensorflow scikit-learn scikit-posthocs seaborn matplotlib
 
+## 📐 Statistical Comparison
+After collecting results over 5 folds, Friedman tests are run for each metric to determine if different hyperparameter configurations yield statistically different results.
+
 # SVM Sentiment Classification with TF-IDF, Cross-Validation, and Metric Analysis
 
 ## Project Overview
