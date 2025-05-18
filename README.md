@@ -59,12 +59,12 @@ TextCNN                                  [32, 3]                   --
 Total params: 1,030,603
 ```
 
-## 📊 Hyperparameter tuning
+## Hyperparameter tuning
 - learning rate = 1e-03, 1e-04
 - batch size = 16, 32, 64
-- epochs = 10, 15
+- epochs
 
-## 📐 Statistical Comparison
+## Statistical Comparison
 After collecting results over 5 folds, Friedman tests are run for each metric to determine if different hyperparameter configurations yield statistically different results.
 
 ## Requirements 
