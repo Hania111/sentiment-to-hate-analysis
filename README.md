@@ -38,10 +38,10 @@ After collecting results over 5 folds, Friedman tests are run for each metric to
 # Convolutional Neural Network
 ## Project Overview
 - Data loading
-- Data tokenization and cleaning
+- Data processing: cleaning, tokenization, creating dictionary of 10 000 most common tokens
 - Training CNN
 - Collection of metrics: F1, accuracy, precision, recall, confusion matrix
-- Search over learning rate, batch size, epochs
+- Hyperparameters (learning rate, batch size, number of epochs) tuning
 - Friedman statistical tests to determine if hyperparameter tuning leads to statistically significant differences
 
 ## Model
@@ -59,19 +59,16 @@ TextCNN                                  [32, 3]                   --
 Total params: 1,030,603
 ```
 
-## Requirements 
-`pip install pytorch pandas datasets scikit-learn scikit-posthocs seaborn matplotlib`
-
-## 📊 Hyperparameter Grid
-learning rate = 1e-03, 1e-04
-
-batch size = 16, 32, 64
-
-epochs = 10, 15
+## 📊 Hyperparameter tuning
+- learning rate = 1e-03, 1e-04
+- batch size = 16, 32, 64
+- epochs = 10, 15
 
 ## 📐 Statistical Comparison
 After collecting results over 5 folds, Friedman tests are run for each metric to determine if different hyperparameter configurations yield statistically different results.
 
+## Requirements 
+`pip install pytorch pandas datasets scikit-learn scikit-posthocs seaborn matplotlib`
 
 
 
