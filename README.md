@@ -68,7 +68,7 @@ Total params: 1,030,603
 After collecting results over 5 folds, Friedman tests are run for each metric to determine if different hyperparameter configurations yield statistically different results.
 
 ## Requirements 
-`pip install pytorch pandas datasets scikit-learn scikit-posthocs seaborn matplotlib`
+`pip install pytorch torchinfo pandas datasets scikit-learn scikit-posthocs seaborn matplotlib`
 
 
 
