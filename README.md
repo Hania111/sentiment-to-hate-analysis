@@ -60,21 +60,21 @@ Total params: 1,030,603
 ```
 
 ## Requirements 
-`pip install pytorch datasets scikit-learn scikit-posthocs seaborn matplotlib`
+`pip install pytorch pandas datasets scikit-learn scikit-posthocs seaborn matplotlib`
 
 ## 📊 Hyperparameter Grid
-The model is fine-tuned using a small grid:\
+learning rate = 1e-03, 1e-04
 
-`param_grid = list(ParameterGrid({
-    'learning_rate': [1e-3, 1e-4],
-    'per_device_train_batch_size': [32, 64, 128]
-    'epochs': [5, 10]
-}))`
+batch size = 16, 32, 64
 
-The evaluation batch size is set equal to the training batch size for consistency.
+epochs = 10, 15
 
 ## 📐 Statistical Comparison
 After collecting results over 5 folds, Friedman tests are run for each metric to determine if different hyperparameter configurations yield statistically different results.
+
+
+
+
 
 # LSTM Sentiment Classification with Cross-Validation, Hyperparameter Tuning, and Statistical Analysis
 
