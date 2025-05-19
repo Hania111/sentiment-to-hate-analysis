@@ -23,7 +23,7 @@ The model is fine-tuned using a small grid:\
 
 `param_grid = list(ParameterGrid({
     'learning_rate': [2e-5],
-    'per_device_train_batch_size': [8]
+    'per_device_train_batch_size': [16,32]
 }))`
 
 The evaluation batch size is set equal to the training batch size for consistency.
