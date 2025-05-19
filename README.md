@@ -7,8 +7,6 @@ The provided sentiment_dataset.csv contains tweets categorized into three classe
 1 – Neutral sentiment
 2 – Hate speech
 
-The class labels must be encoded as {0, 1, 2} because the CrossEntropyLoss function used in training expects integer class indices starting from 0 up to num_labels - 1.
-
 # 📊 DistilBERT Sentiment Classification with Cross-Validation, Hyperparameter Tuning, and Statistical Analysis
 ## Project Overview
 - Data loading
